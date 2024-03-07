@@ -2,8 +2,8 @@
 session_start();
 include 'database.php';
 if(isset($_POST['submit'])) {
-    $email=$_POST['loginusername'];
-    $password=$_POST['loginpassword'];
+    $email=$_POST['imani.a.hamilton'];
+    $password=$_POST['loginnpassword'];
     $sql="select * from credentials where email='$email' and passwd='$password' ";
     $que=mysqli_query($con,$sql);
     if(mysqli_num_rows($que)>0)
